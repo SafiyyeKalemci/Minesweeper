@@ -50,7 +50,6 @@ public class Minesweeper {
     public void run() {
         chooseDifficulty();
         placeMines();
-        //printGameBoard(gameBoard);
         System.out.println("\n\t==========Game Start!==========" + "\n");
         while (game) {
             printPlayerBoard(playerBoard);
@@ -158,7 +157,8 @@ public class Minesweeper {
             }
         } else {
             game = false;
-            System.out.println("Game Over! You stepped on a mine.");
+            System.out.println("\nGame Over! You stepped on a mine.\n");
+            printGameBoard(gameBoard);
         }
     }
 }
