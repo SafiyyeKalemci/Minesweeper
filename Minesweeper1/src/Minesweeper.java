@@ -88,7 +88,7 @@ public class Minesweeper {
 
     public void printPlayerBoard(char[][] array) {
         System.out.print("  ");
-        int k = 0;
+        int k;
         for (k = 0; k < COLUMNS; k++) {
             if (k >= 10)
                 break;
